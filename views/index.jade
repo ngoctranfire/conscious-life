@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    template(is="dom-bind" id="app")
+        paper-drawer-panel(id="paperDrawerPanel")
+            paper-scroll-header-panel(drawer fixed)
+                paper-toolbar(id="drawerToolbar")
+                    span(class="paper-font-title")
+                paper-menu
+                    paper-item Home
+                    paper-item Users
+                    paper-item About
+            // Main Area
+            paper-scroll-header-panel(main condenses keep-condensed-header)
+                paper-toolbar(id="mainToolbar" class="tall")
+                    paper-icon-button(id="paperToggle" icon="menu" paper-drawer-toggle)
+                    span(class="flex")
+
+                    // Toolbar Icons
+                    paper-icon-button(icon="refresh")
+                    paper-icon-button(icon="search")
+
+                    // Application Name
+                    div(class="middle middle-container center horizontal layout")
+                        div(class="app-name") Polymer Starter Kit
+                    div(class="bottom bottom-container center horizontal layout")
+                        div(class="bottom-title paper-font-subhead") The future of the web today
+                div(class="content")
+                    section
+                        paper-material(elevation="1")
+                            p(class="paper-font-subhead") You now have:re

@@ -1,0 +1,12 @@
+//
+   Created by ngoctranfire on 9/6/15.
+link(rel="import", href="/bower_components/polymer/polymer.html")
+
+script(type='text/javascript').
+    Polymer({
+       is: "proto-element",
+        //add a callback to the element's prototype
+        ready: function() {
+            this.textContent = "I'm a prototype element. Check out my prototype!"
+        }
+    });
