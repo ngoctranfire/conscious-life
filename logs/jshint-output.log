@@ -1,0 +1,95 @@
+28 lint errors found in /Users/ntran/Desktop/conscious-life/app.js
+  [29,20](W requirePaddingNewLinesBeforeLineComments) Line comments must be preceded with a blank line
+  [44,2](W validateIndentation) Expected indentation of 2 characters
+  [45,2](W validateIndentation) Expected indentation of 2 characters
+  [46,2](W validateIndentation) Expected indentation of 2 characters
+  [47,24](W requireTrailingComma) Missing comma before closing curly brace
+  [47,2](W validateIndentation) Expected indentation of 2 characters
+  [57,2](W validateIndentation) Expected indentation of 2 characters
+  [61,2](W validateIndentation) Expected indentation of 2 characters
+  [62,4](W validateIndentation) Expected indentation of 4 characters
+  [63,2](W validateIndentation) Expected indentation of 2 characters
+  [67,2](W validateIndentation) Expected indentation of 2 characters
+  [68,2](W validateIndentation) Expected indentation of 2 characters
+  [69,2](W validateIndentation) Expected indentation of 2 characters
+  [70,2](W validateIndentation) Expected indentation of 2 characters
+  [70,21](W requireTrailingComma) Missing comma before closing curly brace
+  [71,0](W validateIndentation) Expected indentation of 0 characters
+  [73,6](W validateIndentation) Expected indentation of 6 characters
+  [74,8](W validateIndentation) Expected indentation of 8 characters
+  [75,10](W validateIndentation) Expected indentation of 10 characters
+  [76,8](W validateIndentation) Expected indentation of 8 characters
+  [78,6](W validateIndentation) Expected indentation of 6 characters
+  [86,25](W requirePaddingNewLinesBeforeLineComments) Line comments must be preceded with a blank line
+  [90,8](W disallowSpacesInsideParentheses) Illegal space after opening round bracket
+  [102,10](W disallowSpacesInsideParentheses) Illegal space after opening round bracket
+  [106,16](W requireTrailingComma) Missing comma before closing curly brace
+  [113,8](W disallowSpacesInsideParentheses) Illegal space after opening round bracket
+  [117,13](W requireTrailingComma) Missing comma before closing curly brace
+  [119,3](W disallowMultipleLineBreaks) ; and module should have at most 2 line(s) between them19 lint errors found in /Users/ntran/Desktop/conscious-life/gulpfile.js
+  [3,3](W requirePaddingNewLinesBeforeLineComments) Line comments must be preceded with a blank line
+  [15,22](W validateQuoteMarks) Invalid quote mark found
+  [21,2](W validateIndentation) Expected indentation of 2 characters
+  [27,2](W validateIndentation) Expected indentation of 2 characters
+  [34,2](W validateIndentation) Expected indentation of 2 characters
+  [37,31](W requireSpaceBeforeBlockStatements) One (or more) spaces required before opening brace for block expressions
+  [40,10](W validateIndentation) Expected indentation of 10 characters
+  [45,2](W validateIndentation) Expected indentation of 2 characters
+  [47,10](W validateIndentation) Expected indentation of 10 characters
+  [48,10](W validateIndentation) Expected indentation of 10 characters
+  [48,12](W disallowQuotedKeysInObjects) Extra quotes for key
+  [49,10](W validateIndentation) Expected indentation of 10 characters
+  [49,12](W disallowQuotedKeysInObjects) Extra quotes for key
+  [50,10](W validateIndentation) Expected indentation of 10 characters
+  [50,12](W disallowQuotedKeysInObjects) Extra quotes for key
+  [57,2](W validateIndentation) Expected indentation of 2 characters
+  [71,2](W validateIndentation) Expected indentation of 2 characters
+  [72,2](W validateIndentation) Expected indentation of 2 characters
+  [76,75](W requireLineFeedAtFileEnd) Missing line feed at file end28 lint errors found in /Users/ntran/Desktop/conscious-life/app.js
+  [29,20](W requirePaddingNewLinesBeforeLineComments) Line comments must be preceded with a blank line
+  [44,2](W validateIndentation) Expected indentation of 2 characters
+  [45,2](W validateIndentation) Expected indentation of 2 characters
+  [46,2](W validateIndentation) Expected indentation of 2 characters
+  [47,24](W requireTrailingComma) Missing comma before closing curly brace
+  [47,2](W validateIndentation) Expected indentation of 2 characters
+  [57,2](W validateIndentation) Expected indentation of 2 characters
+  [61,2](W validateIndentation) Expected indentation of 2 characters
+  [62,4](W validateIndentation) Expected indentation of 4 characters
+  [63,2](W validateIndentation) Expected indentation of 2 characters
+  [67,2](W validateIndentation) Expected indentation of 2 characters
+  [68,2](W validateIndentation) Expected indentation of 2 characters
+  [69,2](W validateIndentation) Expected indentation of 2 characters
+  [70,2](W validateIndentation) Expected indentation of 2 characters
+  [70,21](W requireTrailingComma) Missing comma before closing curly brace
+  [71,0](W validateIndentation) Expected indentation of 0 characters
+  [73,6](W validateIndentation) Expected indentation of 6 characters
+  [74,8](W validateIndentation) Expected indentation of 8 characters
+  [75,10](W validateIndentation) Expected indentation of 10 characters
+  [76,8](W validateIndentation) Expected indentation of 8 characters
+  [78,6](W validateIndentation) Expected indentation of 6 characters
+  [86,25](W requirePaddingNewLinesBeforeLineComments) Line comments must be preceded with a blank line
+  [90,8](W disallowSpacesInsideParentheses) Illegal space after opening round bracket
+  [102,10](W disallowSpacesInsideParentheses) Illegal space after opening round bracket
+  [106,16](W requireTrailingComma) Missing comma before closing curly brace
+  [113,8](W disallowSpacesInsideParentheses) Illegal space after opening round bracket
+  [117,13](W requireTrailingComma) Missing comma before closing curly brace
+  [119,3](W disallowMultipleLineBreaks) ; and module should have at most 2 line(s) between them19 lint errors found in /Users/ntran/Desktop/conscious-life/gulpfile.js
+  [3,3](W requirePaddingNewLinesBeforeLineComments) Line comments must be preceded with a blank line
+  [15,22](W validateQuoteMarks) Invalid quote mark found
+  [21,2](W validateIndentation) Expected indentation of 2 characters
+  [27,2](W validateIndentation) Expected indentation of 2 characters
+  [34,2](W validateIndentation) Expected indentation of 2 characters
+  [37,31](W requireSpaceBeforeBlockStatements) One (or more) spaces required before opening brace for block expressions
+  [40,10](W validateIndentation) Expected indentation of 10 characters
+  [45,2](W validateIndentation) Expected indentation of 2 characters
+  [47,10](W validateIndentation) Expected indentation of 10 characters
+  [48,10](W validateIndentation) Expected indentation of 10 characters
+  [48,12](W disallowQuotedKeysInObjects) Extra quotes for key
+  [49,10](W validateIndentation) Expected indentation of 10 characters
+  [49,12](W disallowQuotedKeysInObjects) Extra quotes for key
+  [50,10](W validateIndentation) Expected indentation of 10 characters
+  [50,12](W disallowQuotedKeysInObjects) Extra quotes for key
+  [57,2](W validateIndentation) Expected indentation of 2 characters
+  [71,2](W validateIndentation) Expected indentation of 2 characters
+  [72,2](W validateIndentation) Expected indentation of 2 characters
+  [76,86](W requireLineFeedAtFileEnd) Missing line feed at file end

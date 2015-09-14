@@ -2,7 +2,10 @@
  * Created by ngoctranfire on 9/9/15.
  */
 var mongoose = require('mongoose');
-var scrypt = require('scrypt');
+var Schema = mongoose.Schema;
+var scrypt = require('bcrypt');
+
+SALT_WORK_FACTOR = 15;
 
 function validateEmail(email) {
     var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
@@ -12,8 +15,7 @@ function validateEmail(email) {
 var INVALID_EMAIL = "Invalid email";
 var emailValidation = [validateEmail, INVALID_EMAIL];
 
-var UserProfileSchema = new Schema(
-    {
+var UserProfileSchema = new Schema({
         email: {type: String, required: true, unique: true, lowercase: true, validate: emailValidation},
         password: {type: String, required: true},
         name: {

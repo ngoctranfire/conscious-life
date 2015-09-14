@@ -3,7 +3,7 @@
     <envs>
       <env name="DEBUG" value="conscious-life:*" />
     </envs>
-    <browser url="http://localhost:3000/" />
+    <browser start="true" url="http://localhost:3000/" />
     <method />
   </configuration>
 </component>
