@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="CompassSettings">
+    <option name="compassConfigPath" value="$MODULE_DIR$/compass.rb" />
     <option name="compassExecutableFilePath" value="/usr/bin/compass" />
     <option name="compassSupportEnabled" value="true" />
     <option name="importPaths">

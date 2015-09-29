@@ -1,0 +1,16 @@
+/* line 3, ../scss/style.scss */
+body {
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  padding: 50px;
+}
+
+/* line 8, ../scss/style.scss */
+a {
+  background: #00b7ff;
+  color: red;
+}
+
+/* line 13, ../scss/style.scss */
+p {
+  background: #FFFFFF;
+}

@@ -10,6 +10,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var jadeStatic = require('connect-jade-static');
 var passport = require('passport');
+var url = require('url');
+var fs = require('fs');
+var jade = require('jade');
 var LocalStrategy = require('passport-local').Strategy;
 
 /**
@@ -24,7 +27,7 @@ var users = require('./model/user');
 var routes = require('./routes/index');
 var blobs = require('./routes/blobs');
 
-//var users = require('./routes/users');
+var users = require('./routes/users');
 
 var app = express();
 // view engine setup
@@ -37,12 +40,11 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(require('node-compass')({mode: 'expanded'}));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bower_components', express.static(__dirname + '/bower_components'));
 app.use(jadeStatic({
-    baseDir: path.join(__dirname, '/views/partials'),
-    baseUrl: '/partials',
+    baseDir: path.join(__dirname, '/views/polymers/'),
+    baseUrl: '/polymers',
     maxAge: 86400,
     jade: {pretty: true}
 }));
