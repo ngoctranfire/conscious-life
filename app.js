@@ -40,14 +40,9 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-app.use('/bower_components', express.static(__dirname + '/bower_components'));
-app.use(jadeStatic({
-    baseDir: path.join(__dirname, '/views/polymers/'),
-    baseUrl: '/polymers',
-    maxAge: 86400,
-    jade: {pretty: true}
-}));
+app.use(express.static(path.join(__dirname, 'dist')));
+app.use('bower_components', express.static(path.join(__dirname,'dist/bower_components')));
+app.use('polymers', express.static(path.join(__dirname, 'dist/polymers')));
 
 /**
  * Start passport configurations!
