@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JSLintConfiguration" json="true">
+    <option ass="true" />
+    <option bitwise="true" />
+    <option browser="true" />
+    <option closure="true" />
+    <option debug="true" />
+    <option devel="true" />
+    <option indent="2" />
+    <option maxerr="50" />
+    <option maxlen="120" />
+    <option node="true" />
+    <option vars="true" />
+    <option white="true" />
+  </component>
+</project>
