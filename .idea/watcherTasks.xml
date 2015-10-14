@@ -9,13 +9,33 @@
       <option name="fileExtension" value="scss" />
       <option name="immediateSync" value="true" />
       <option name="name" value="Compass SCSS" />
-      <option name="output" value="$PROJECT_DIR$/public/css/" />
+      <option name="output" value="$PROJECT_DIR$/dist/css/" />
       <option name="outputFilters">
         <array />
       </option>
       <option name="outputFromStdout" value="true" />
       <option name="passParentEnvs" value="true" />
       <option name="program" value="/usr/bin/compass" />
+      <option name="scopeName" value="Project Files" />
+      <option name="trackOnlyRoot" value="true" />
+      <option name="workingDir" value="$PROJECT_DIR$" />
+      <envs />
+    </TaskOptions>
+    <TaskOptions isEnabled="false">
+      <option name="arguments" value="$FileName$" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" value="Compiles .jade files into .html files" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="jade" />
+      <option name="immediateSync" value="true" />
+      <option name="name" value="Jade" />
+      <option name="output" value="$PROJECT_DIR$/dist/polymers" />
+      <option name="outputFilters">
+        <array />
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="passParentEnvs" value="true" />
+      <option name="program" value="$FileDir$/polymers/" />
       <option name="scopeName" value="Project Files" />
       <option name="trackOnlyRoot" value="true" />
       <option name="workingDir" value="$PROJECT_DIR$" />

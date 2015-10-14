@@ -1,15 +1,28 @@
 @import "compass/css3";
 
+$main-theme-deep-orange-50: #FBE9E7;
+$main-theme-deep-orange-500: #FF5722;
+$main-theme-deep-orange-700: #E64A19;
+
+$main-theme-sky-blue-50: #E1F5FE;
+$main-theme-sky-blue-500: #03A9F4;
+$main-theme-sky-blue-700: #0288D1;
+
+$main-theme-grass-green-50: #E8F5E9;
+$main-theme-grass-green-500: #4CAF50;
+$main-theme-grass-green-700: #388E3C;
+
+$white: #FFFFFF;
 body {
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
-  padding: 50px;
-}
-
-a {
-  background: #00b7ff;
-  color: blue;
+  margin: 0 auto;
+  background-color: $main-theme-grass-green-50;
+  color: white;
+  width: 100%;
+  height: 100%;
 }
 
 p {
   background: #FFFFFF;
 }
+

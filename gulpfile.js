@@ -60,6 +60,7 @@ gulp.task('jshint', function jsLint() {
   'use strict';
   return gulp.src(['dist/js',
         'dist/polymers/**/*.js',
+		    'app.js',
         'gulpfile.js',
     ])
     .pipe(browserSync.reload({stream: true, once: true}))
@@ -150,6 +151,16 @@ gulp.task('watch', function watch() {
   gulp.watch('*.scss', ['scss-lint']);
 });
 
+gulp.task('build-vulcan', function buildVulcan(cb) {
+	'use strict';
+	runSequence(
+			'jadify-polymers',
+			'copy',
+			'vulcanize',
+			'rename-index',
+		cb);
+});
+
 // Default Task
 gulp.task('default', ['clean'], function sequenceTasks(cb) {
   'use strict';
@@ -157,7 +168,8 @@ gulp.task('default', ['clean'], function sequenceTasks(cb) {
       'jadify-polymers', 'compass',
       'copy',
       'babel',
-      'vulcanize', 'rename-index',
+      'vulcanize',
+		  'rename-index',
       ['jshint', 'prefix-css', 'prefix-polymers', 'scss-lint'],
       'watch',
     cb);

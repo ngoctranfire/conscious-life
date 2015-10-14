@@ -1,0 +1,166 @@
+{{!< main}}
+{{#contentFor 'head'}}
+<style is="custom-style">
+  :root {
+    --main-theme-deep-orange-50: #FBE9E7;
+    --main-theme-deep-orange-500: #FF5722;
+    --main-theme-deep-orange-700: #E64A19;
+
+    --main-theme-sky-blue-50: #E1F5FE;
+    --main-theme-sky-blue-500: #03A9F4;
+    --main-theme-sky-blue-700: #0288D1;
+
+    --main-theme-grass-green-50: #E8F5E9;
+    --main-theme-grass-green-500: #4CAF50;
+    --main-theme-grass-green-600: #43A047;
+    --main-theme-grass-green-700: #388E3C;
+
+  }
+
+  paper-drawer-panel {
+    --paper-drawer-panel-main-container: {
+       background-color: var(--main-theme-grass-green-50);
+     };
+
+    --paper-drawer-panel-left-drawer-container: {
+       background-color: var(--main-theme-sky-blue-50);
+     }
+  }
+
+  paper-scroll-header-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-theme-grass-green-50);
+    --paper-scroll-header-panel-full-header: {
+       /*background-image: url(images/shane_cover.jpg);*/
+       background-color: var(--main-theme-grass-green-500);
+     };
+    --paper-scroll-header-panel-condensed-header: {
+       /*background-image: url(images/shane_cover.jpg);*/
+       /*background-position-y: 50px;*/
+       background-color: var(--main-theme-grass-green-600);
+     };
+
+
+  }
+
+  paper-toolbar {
+    background-color: transparent;
+  }
+
+  paper-toolbar.side-nav {
+    background-color: var(--main-theme-sky-blue-500);
+  }
+  .middle, .bottom{
+    width: 100%;
+    text-align: center;
+  }
+  .main-title{
+    text-align: center;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  .main-title-container {
+    height: 100%;
+    margin-left: 48px;
+  }
+  .main-sub-title {
+    margin-left: 48px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -ms-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+</style>
+{{/contentFor}}
+<paper-drawer-panel default-selected="main" responsive-width="3000px">
+  <!-- Drawer Area -->
+  <paper-header-panel mode="standard" drawer>
+    <paper-toolbar class="side-nav">
+      <div class="main-content">
+        Drawer Content ....
+      </div>
+    </paper-toolbar>
+    <paper-item>
+      <a class="bookmarklet" href="javascript:(function(){function isUnregisteredCustomElement(el){if(el.constructor==HTMLElement){console.error('Found unregistered custom element:',el);return true;}return false;}function isCustomEl(el){return el.localName.indexOf('-')!=-1||el.getAttribute('is');}var allCustomElements=document.querySelectorAll('html /deep/ *');allCustomElements=Array.prototype.slice.call(allCustomElements).filter(function(el){return isCustomEl(el);});var foundSome=false;for(var i=0,el;el=allCustomElements[i];++i){if(isUnregisteredCustomElement(el)){foundSome=true;}}if(foundSome){alert('Oops: found one or more unregistered custom elements in use! Check the console.');}else{alert('Good: All custom elements are registered :)');}})();")>
+        Checker Baby
+      </a>
+    </paper-item>
+  </paper-header-panel>
+  <!-- Main Scroll Area -->
+  <paper-scroll-header-panel main condenses keep-condensed-header>
+    <!-- Main Paper Toolbar Header -->
+    <paper-toolbar class="tall" id="mainToolbar">
+      <paper-icon-button class="flex-none" icon="menu" paper-drawer-toggle></paper-icon-button>
+      <span class="flex-10"></span>
+      <paper-icon-button class="flex" icon="search"></paper-icon-button>
+      <div class="middle center layout horizontal main-title-container">
+        <h1 class="flex center main-title">
+          Main Title Goes Here
+        </h1>
+      </div>
+      <div class="bottom center layout horizontal bottom-title-container">
+        <h3 class="flex center main-sub-title">
+          Supporting Content Goes Here
+        </h3>
+      </div>
+    </paper-toolbar>
+    <!-- Main Content Within the Page -->
+    <div>
+      Blah Blah BLah
+      <p> Blah BLah</p>
+    </div>
+    <div>
+      Blah Blah BLah
+      <p> Blah BLah</p>
+    </div>
+
+
+  </paper-scroll-header-panel>
+</paper-drawer-panel>
+
+{{#contentFor 'scripts'}}
+<script>
+  (function (document) {
+    "use strict";
+    window.addEventListener('WebComponentsReady', function () {
+      // imports are loaded and elements have been registered
+      console.log("Baby its all loaded and ready to go!");
+    });
+    addEventListener('paper-header-transform', function (e) {
+      console.log("Event triggered baby!");
+      var appName = document.querySelector('#mainToolbar .main-title');
+      var middleContainer = document.querySelector('#mainToolbar .main-title-container');
+      var bottomContainer = document.querySelector('#mainToolbar .bottom-title-container');
+      var detail = e.detail;
+      var heightDiff = detail.height - detail.condensedHeight;
+      var yRatio = Math.min(1, detail.y / heightDiff);
+      var maxMiddleScale = 0.50;  // appName max size when condensed. The smaller the number the smaller the condensed size.
+      var scaleMiddle = Math.max(maxMiddleScale, (heightDiff - detail.y) / (heightDiff / (1 - maxMiddleScale)) + maxMiddleScale);
+      var scaleBottom = 1 - yRatio;
+      console.log("The event: " + e);
+      console.log("The event detail: " + e.detail);
+      console.log("Height =" + detail.height + " ; condensedHeight=" + detail.condensedHeight);
+      console.log("The height Difference: " + heightDiff);
+      console.log("The Y Axis=" + detail.y);
+      console.log("The scaleMiddle=" + scaleMiddle);
+      console.log("The scaleBottom=" + scaleBottom);
+      // Move/translate middleContainer
+      Polymer.Base.transform('translate3d(0,' + yRatio * 100 + '%,0)', middleContainer);
+      Polymer.Base.transform('translate3d(0,' + yRatio * 100 + '%, 0)', bottomContainer);
+      // Scale bottomContainer and bottom sub title to nothing and back
+      Polymer.Base.transform('scale(' + scaleBottom + ') translateZ(0)', bottomContainer);
+      // Scale middleContainer appName
+      Polymer.Base.transform('scale(' + scaleMiddle + ') translateZ(0)', appName);
+    });
+  })(document);
+</script>
+
+{{/contentFor}}
